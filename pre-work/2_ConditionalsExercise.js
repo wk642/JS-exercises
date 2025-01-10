@@ -139,6 +139,7 @@ exercise3(1);
 exercise3(3);
 exercise3(-3);
 exercise3(0); */
+
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
 // numbers and they have equal values, then change the value of answer4 to
@@ -150,12 +151,26 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  // Write an if/else statement such that if `varA` and `varB` are strings or numbers and they have equal values,
+  if ( varA == varB ) {    
+    // then change the value of answer4 to "varA and varB are equal"
+    answer4 = ("varA and varB are equal");
+  } else {
+    // otherwise assign a value of "varA and varB differ"
+    answer4 = ("varA and varB differ");
+  }
+  //log answer4 to confirm 
+  console.log(answer4);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer4;
 }
+/* test cases for exercise 4 
+exercise4(10, "10");
+exercise4(1, 4);
+exercise4("six", 6);
+exercise4("five", 2);*/
 
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
