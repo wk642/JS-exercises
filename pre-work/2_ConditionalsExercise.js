@@ -49,7 +49,6 @@
 // If it is, then within your if statement code change the value of answer1 so
 // that its new value would be a string that says:
 // "The value of num1 is <num1 value> and is greater than 10".
-console.log("test1");
 function exercise1(num1) {
   let answer1 = "";
   // ------------------------------------------
@@ -71,6 +70,8 @@ function exercise1(num1) {
   // ------------------------------------------
   return answer1;
 }
+/* test case for exercise1
+exercise1(23); */
 
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
@@ -86,6 +87,11 @@ function exercise2(num2) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  // Write an if/else conditional statement that if given a number will assign a string value of: "<num2 value> is even" to `answer2`,
+
+  // if `num2` is even and a value of "<num2 value> is odd" to `answer2`,
+
+  // if `num2` is odd. ie. if num2 has a value of 4 then the message should read: "4 is even"
 
   // --------------------------------------------
   // And above here
@@ -103,17 +109,36 @@ function exercise2(num2) {
 // "<num3 value> is zero"
 
 function exercise3(num3) {
+  console.log("In function2");
+
   let answer3;
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  // Write an if/else if/else block such that if `num3` is positive, 
+  if ( num3 > 0 ) {
+    // then answer3 is assigned the string value of:
+    // "<num3 value> is positive"
+    answer3 = (num3 + " is positive");
+  } else if ( num3 < 0 ){
+    // if `num3` is negative, then the value should be:
+    // "<num3 value> is negative"
+    answer3 = (num3 + " is negative");
+  } else {
+    answer3 = (num3 + " is zero");
+  }
+  //log out answer3 to make sure it works
+  console.log(answer3);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer3;
 }
-
+/* test cases for exercise3
+exercise3(1);
+exercise3(3);
+exercise3(-3);
+exercise3(0); */
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
 // numbers and they have equal values, then change the value of answer4 to
