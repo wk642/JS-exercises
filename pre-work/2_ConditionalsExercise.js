@@ -225,12 +225,46 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  // Use a switch conditional statement with case clauses such that if `num7` is
+  switch ( num7 ){
+    // a number and it has a value of 1 that `answer7` is assigned the string: "You won!"
+    case ( num7 = 1 ):
+      answer7 = "You won!";
+      break;
 
+    // if num7 is 7, then answer7 should be: "You are lucky!"
+    case ( num7 = 7 ):
+      answer7 = "You are lucky!";
+      break;
+      
+    // if num7 is 101, then answer7 should be: "Welcome to coding 101!"
+    case ( num7 = 101 ):
+      answer7 = "Welcome to coding 101!";
+      break;
+      
+    // if num7 is 1000000, then answer7 should be: "You are one in a million!"
+    case ( num7 = 1000000 ):
+      answer7 = "You are one in a million";
+      break;
+
+    // Othewise, assign answer7 a value of: "Thanks for that!"
+    default: 
+      answer7 = "Thanks for that!";
+      break;
+  }
+  console.log(answer7);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer7;
 }
+/* test cases for exercise 7 
+exercise7(1);
+exercise7(7);
+exercise7(101);
+exercise7(1000000);
+exercise7("one");
+exercise7(3); */
 
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
@@ -293,6 +327,6 @@ function exercise10(num10) {
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+//https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/ for clarifying formatt of switch and if I needed to declare that we are comparing an integer rather than a string in exercise 7.
 
 // Email your file to us or commit your file to GitHub and email us a link.
