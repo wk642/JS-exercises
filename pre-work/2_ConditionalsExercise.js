@@ -49,13 +49,23 @@
 // If it is, then within your if statement code change the value of answer1 so
 // that its new value would be a string that says:
 // "The value of num1 is <num1 value> and is greater than 10".
-
+console.log("test1");
 function exercise1(num1) {
   let answer1 = "";
   // ------------------------------------------
   // Write your code for exercise 1 below here:
   // ------------------------------------------
-
+  // just using this to make sure we are in the function
+  console.log("In exercise1 function");
+  // make sure num1 is passed in correctly
+  console.log("num1 is : " + num1);
+  // First reassign the value of `answer1` so that it has the value of: "num1 is small"
+  answer1 = "num1 is small";
+  // Write an if statement that checks if a variable `num1` is greater than 10.
+  if(num1 > 10){
+      // If it is, then within your if statement code change the value of answer1 so that its new value would be a string that says: "The value of num1 is <num1 value> and is greater than 10".
+      answer1 = "The value of num1 is " + num1 + " and is greater than 10";
+  }
   // ------------------------------------------
   // And above here
   // ------------------------------------------
@@ -71,7 +81,6 @@ function exercise1(num1) {
 // if `num2` is odd.
 // ie. if num2 has a value of 4 then the message should read:
 // "4 is even"
-
 function exercise2(num2) {
   let answer2;
   // --------------------------------------------
