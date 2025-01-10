@@ -276,12 +276,23 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  // Using any conditional assign the value of true to answer8 if: the values of amount1 and amount2 are between the values of minimum and maximum
+  if ( amount1 < maximum && amount1 > minimum && amount2 < maximum && amount2 > minimum){
+    answer8 = true;
+  } else{
+    answer8 = false;
+  }
+  //logging answer8 to confirm
+  console.log(answer8);
+  // if not, assign a value of false to answer8
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer8;
 }
+/* test cases exercise8
+exercise8(1, 3, 0, 6);
+exercise8(1234, 4, 100); */
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
