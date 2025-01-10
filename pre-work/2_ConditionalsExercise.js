@@ -176,6 +176,7 @@ exercise4("five", 2);*/
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
 // seemed like they are equal, but would not pass the tests? In your analysis
 // consider other data types beside strings and variables.
+//At first I thought that six and 6 would still be considered as the same, but it was different instead. 
 
 // EXERCISE 6.
 // Here, assign the value of true to answer6 if:
