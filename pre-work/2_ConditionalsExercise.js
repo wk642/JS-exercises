@@ -187,12 +187,25 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+// Here, assign the value of true to answer6 if:
+  // `varA` and `varB` are equal, but `varA` or `varB` does not equal `varC`
+  if ( varA === varB && varA != varC && varB != varC ){
+    answer6 = true;
+  } else {
+    // in the event this is not the case, change the value of answer6 to false
+    answer6 = false;
+  }
+  console.log(answer6)
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer6;
 }
+/* test cases for exercise6
+exercise6( 1, 2, 4 );
+exercise6( 2, 2, 3 );
+exercise6( 2, 3, 2 );
+exercise6( 2, 3, 3 ); */
 
 // EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
