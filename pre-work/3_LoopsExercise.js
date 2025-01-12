@@ -24,7 +24,17 @@ function exercise1(){
 exercise1();
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+function exercise2(){
+  // create variable i to go through the loop
+  let i = 1; 
+  do {
+    //print the intergers
+    console.log(i);
+    i++;
+  } while ( i <= 5 );
+}
 
+exercise2();
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
