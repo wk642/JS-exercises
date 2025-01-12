@@ -73,6 +73,12 @@ function exercise4(){
     //deduct 1 from i to go through the lists
     j--;
   } while ( j >= 1);
+
+  //loop 3: for
+  for( i = 10; i >= 1; i--){
+    //prints each number
+    console.log( "exercise 4 for loop: " + i);
+  }
 }
 
 //calls exercise4
