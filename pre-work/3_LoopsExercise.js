@@ -119,16 +119,49 @@ exercise5();
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+function exercise6(){
+  //create 3 loops to go through the numbers from 0 - 100 by tens. 
+  //creating i vari[able to go through these 
+  let i = 0;
+
+  // loop 1 : while
+  while ( i <= 100){
+    //print each number
+    console.log("exercise 6 while loopl : " + i);
+    //increase i by 10 because we are only display tens
+    i += 10;
+  }
+
+  // reset i = 10
+  i = 0;
+
+  // loop 2 do while loop 
+  do{
+    // print by 10s
+    console.log("exercise 6 do while loop : " + i );
+    // increase by 10
+    i += 10;
+  } while (i <= 100);
+
+  // loop 3 for loop
+  for ( i = 0; i <= 100; i += 10 ){
+    //print out by tens
+    console.log("exercise 6 for loop : " + i);
+  }
+}
+
+// calls exercise 6
+exercise6();
 
 // Exercise 7. Add a comment as to why the following loop is an infinite loop (will
 // run without ever stopping). Then fix the loop so that it stops when
 // counterFour is equal to -100.
-/*
+//the loop was an infinite loop because in the current counterFour, it will always be less than two because we are deducting from it each loop.
 let counterFour = 1;
-while (counterFour < 2) {
+while (counterFour >= -100) {
   console.log("HELP ME!");
   counterFour--;
-} */
+} 
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
