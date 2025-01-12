@@ -197,7 +197,7 @@ for ( i = 0; i <= 100; i++ ){
 // But in real life, how would you decide which type of loop to use? You might not have an
 // exact answer, but spend a few minutes thinking about the different types of loops and/or
 // doing some research and write down your thoughts in a comment below:
-//
+// I believe that I personally prefer the for loop whenever I can, it allows me to clearly identify where I am in in the loop, and where to go etc. I also feel like it was the most efficient way as well.
 
 // Exercise 11. Now we'll practice using nested loops (a loop inside another loop)!
 // Update the nested loops below to so that for each value of outsideCounter,
