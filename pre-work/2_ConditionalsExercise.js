@@ -90,14 +90,22 @@ function exercise2(num2) {
   // Write an if/else conditional statement that if given a number will assign a string value of: "<num2 value> is even" to `answer2`,
 
   // if `num2` is even and a value of "<num2 value> is odd" to `answer2`,
+  if ( num2 % 2 !== 0 ){
+    answer2 = ( num2 + " is odd" );
+  } else if ( num2 % 2 === 0 ){
+    // if `num2` is odd. ie. if num2 has a value of 4 then the message should read: "4 is even"
+    answer2 = ( num2 + " is even" );
+  }
 
-  // if `num2` is odd. ie. if num2 has a value of 4 then the message should read: "4 is even"
-
+  //log answer2 to confirm
+  console.log(answer2);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer2;
 }
+exercise2(1);
+exercise2(4);
 
 // EXERCISE 3.
 // Write an if/else if/else block such that if `num3` is positive, then
