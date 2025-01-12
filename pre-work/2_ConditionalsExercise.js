@@ -104,8 +104,9 @@ function exercise2(num2) {
   // --------------------------------------------
   return answer2;
 }
+/* test cases for exercise2
 exercise2(1);
-exercise2(4);
+exercise2(4); */
 
 // EXERCISE 3.
 // Write an if/else if/else block such that if `num3` is positive, then
@@ -382,16 +383,36 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  // This question is a modified version of a classic programming question called "Fizz Buzz"
+  // Using a conditional, assign a value of:
+  // "Fizz" to `answer10` if the value of `num10` is divisible by 3
+  if ( num10 % 3 === 0 ){
+    answer10 = "Fizz";
+  } else if ( num10 % 5 === 0 ){
+    // "Buzz" to `answer10` if the value of `num10` is divisible by 5
+    answer10 = "Buzz";
+  } else if ( num10 % 15 === 0){
+    // "Fizz Buzz" to `answer10` if the value of `num10` is divisible by 15
+    answer10 = "Fizz Buzz";
+  } else {
+    // and if none of these conditions are satisfied, then assign the value of `num10` to `answer10`
+    answer10 = num10;
+  }
 
+  console.log(answer10);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer10;
 }
-
+exercise10(9);
+exercise10(10);
+exercise10(30);
+exercise10(2);
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/ for clarifying formatt of switch and if I needed to declare that we are comparing an integer rather than a string in exercise 7.
+// This was relatively easy. I am seeing that in exercise 10, I am unable to check for divisible 15. I thought that it is going to go by whichever line goes first, so I attempted to swith divisible 15 up to divisible by 5, but that did not work as expected. 
+// I did use this resource. https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/ for clarifying formatt of switch and if I needed to declare that we are comparing an integer rather than a string in exercise 7.
 
 // Email your file to us or commit your file to GitHub and email us a link.
