@@ -306,12 +306,58 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  // In this exercise, if `item` is a number, follow the rules given in Exercise 7 except that `answer7` is replaced by `answer9`
+    // Use a switch conditional statement with case clauses such that if `item` is
+    switch ( item ){
+      // If `item` is not a number, then assign a value to answer9 of: "Please send a number, that was a <data type>."
+      case ( typeof item !== "number" ):
+          answer9 = ("Please send a number, that was a " + (typeof item));
+          console.log("the answer is " + answer9);
+          break;
+      // for example, if item===true, the value should be: "Please send a number, that was a boolean."
+      case ( item === true ): 
+        answer9 = "Please send a number, that was a boolean";
+
+      // a number and it has a value of 1 that `answer9` is assigned the string: "You won!"
+      case ( item = 1 ):
+        answer9 = "You won!";
+        break;
+  
+      // if item is 7, then answer9 should be: "You are lucky!"
+      case ( item = 7 ):
+        answer9 = "You are lucky!";
+        break;
+        
+      // if item is 101, then answer9 should be: "Welcome to coding 101!"
+      case ( item = 101 ):
+        answer9 = "Welcome to coding 101!";
+        break;
+        
+      // if item is 1000000, then answer9 should be: "You are one in a million!"
+      case ( item = 1000000 ):
+        answer9 = "You are one in a million";
+        break;
+  
+      // Othewise, assign answer9 a value of: "Thanks for that!"
+      default: 
+        answer9 = "Thanks for that!";
+        break;
+    }
+    console.log(answer9);
+
 
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer9;
 }
+/*test cases for exercise9
+exercise9("Yes");
+exercise9(1);
+exercise9(7);
+exercise9(1000000);
+exercise9(true);
+exercise9(false);*/
 
 // EXERCISE 10.
 // This question is a modified version of a classic programming question
