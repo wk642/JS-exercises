@@ -17,31 +17,66 @@ function exercise1(){
   // start of the while loop
   while(i <= 5){
     //print out 1, 2, 3, 4, 5
-    console.log(i);
+    console.log("exercise 1 : " + i);
+    //increase i, to print through the numbers
     i++;
   }
 }
+//call the function for exercise1
 exercise1();
+
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 function exercise2(){
   // create variable i to go through the loop
   let i = 1; 
   do {
-    //print the intergers
-    console.log(i);
+    //print the intergers: 1, 2, 3, 4, 5
+    console.log("exercise 2 : " + i);
+    //increase i everytime to go through the loop
     i++;
   } while ( i <= 5 );
 }
 
+//calls the function exercise2 
 exercise2();
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+function exercise3(){
+  for( i = 1; i <= 5; i++ ){
+    //prints out 1, 2, 3, 4, 5
+    console.log("exercise 3 : " + i);
+  }
+}
+//calls the function exercise 3
+exercise3();
 
 // Exercise 4. Now we want a loop that prints the integers
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+function exercise4(){
+  // create 3 loops to count down from 10 to 1
+  // loop 1 : while
+  let i = 10;
+  while ( i >= 1){
+    // print out each number
+    console.log("exercise 4 while loop: " + i);
+    // deduct 1 from i to go down the lists
+    i--;
+  }
 
+  //loop 2 : do while
+  let j = 10;
+  do {
+    //print each nubmer
+    console.log( "exercise 4 do while loop: " + j);
+    //deduct 1 from i to go through the lists
+    j--;
+  } while ( j >= 1);
+}
+
+//calls exercise4
+exercise4();
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
