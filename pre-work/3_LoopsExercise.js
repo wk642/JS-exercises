@@ -83,9 +83,39 @@ function exercise4(){
 
 //calls exercise4
 exercise4();
+
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+function exercise5(){
+  //3 loops to go from 7-27
+  // loop 1 : while
+  //declare i 
+  let i = 7;
+  while( i <= 27){
+    //print out each integer
+    console.log("exercise 5 while loop : " + i);
+    //increase i by 1 to go through the loop
+    i++;
+  }
+  //reset i 
+  i = 7;
+  //loop 2 : do while
+  do{
+    //print out each number
+    console.log("exercise 5 do while loop : " + i);
+    // increase i by 1 to go through the loop
+    i++;
+  } while (i >= 27);
 
+  //loop 3: for loop
+  for( i = 7; i <= 27; i++){
+    //print out each number
+    console.log("exercise 5 for loop : " + i);
+  } 
+}
+
+//calls exercise5
+exercise5();
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
