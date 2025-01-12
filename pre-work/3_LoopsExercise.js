@@ -172,17 +172,26 @@ for ( i = 0; i <= 42; i++){
   //print each integer
   console.log ("exercise 8 : " + i );
 }
+
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
-// Next to each number it should print "not my favorite number". But next to your favorite
-// number it should print "my favorite number!". Example output (if your favorite number was 2):
-// 0 not my favorite number
-// 1 not my favorite number
-// 2 my favorite number!
-// 3 not my favorite number
-// ...
-// (Hint - use an if statement in your loop)
-
+let favNumber = 42;
+//create loop 
+for ( i = 0; i <= 100; i++ ){
+  // Next to each number it should print "not my favorite number". But next to your favorite
+  // number it should print "my favorite number!". Example output (if your favorite number was 2):
+  // 0 not my favorite number
+  // 1 not my favorite number
+  // 2 my favorite number!
+  // 3 not my favorite number
+  // ...
+  // (Hint - use an if statement in your loop)
+  if ( i === favNumber ){
+    console.log( i + " my favorite number!" );
+  } else{
+    console.log( i + " not my favorite number");
+  }
+}
 // Exercise 10. In some of the exercises above, we had you write all 3 types of loops, for practice.
 // But in real life, how would you decide which type of loop to use? You might not have an
 // exact answer, but spend a few minutes thinking about the different types of loops and/or
