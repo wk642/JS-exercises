@@ -11,7 +11,14 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
-
+// create variable i to go through the loop
+let i = 1;
+// start of the while loop
+while(i <= 5){
+  //print out 1, 2, 3, 4, 5
+  console.log(i);
+  i++;
+}
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
