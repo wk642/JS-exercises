@@ -17,8 +17,12 @@ function logGreeting(){
 logGreeting();
 
 // Exercise 2. Define a function called getName() that *returns* a string that is your name.
+function getName(){
+  return "Winnie Kelley"
+}
 // Remember, this function should return the string -- not print it.
 // Then print your name in the console by passing getName() into the console.log() function.
+console.log(getName());
 
 // Exercise 3. Call a function within a function -- Write a function called logGreeting2()
 // that prints a full sentence that contains your name: "Hello! My name is <name>."
