@@ -34,8 +34,15 @@ function logGreeting2(){
 logGreeting2();
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
-// The function should return the sum of the 3 numbers.
+function getNumbers(num1, num2, num3){
+  // The function should return the sum of the 3 numbers.
+  // print for testing first
+  console.log(num1 + num2 + num3);
+  // return it.
+  return num1 + num2 + num3;
+}
 // Then write some function calls you would use to test your function.
+getNumbers(1, 2, 3); //should be 6
 
 // Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
 // Write a function that takes in a person's age and returns true if they should get a discount.
