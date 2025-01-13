@@ -110,10 +110,14 @@ console.log("The value of b is " + b);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction2 does
+// It sets the variable x to p1 - p2. p1 and p2 came from what is passed through the function. In this case, the first time this function is called, it would be 10 - 4 which would return 6. The second time this function is called. a is now 6, which means it would return 6 - 1 which is 5. 
 // 2. What prints out for the value of a
+// 6
 // 3. What prints out for the value of b
+// 5
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+// It was correct. 
 
 // Exercise 9. This exercise is to practice reading the documentation for functions.
 // String.split() is a function in the JavaScript standard library that you can use in your code.
