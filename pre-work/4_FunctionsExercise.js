@@ -46,8 +46,26 @@ getNumbers(1, 2, 3); //should be 6
 
 // Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
 // Write a function that takes in a person's age and returns true if they should get a discount.
-// Otherwise it should return false.
+function getDiscount(age){
+  //if age is under 14 or over 65
+  if( age <= 14 || age >= 65 ){
+    // logging to test:
+    console.log( "Get Discount");
+    //return true
+    return true;
+  } else {
+    // log to test
+    console.log( "no discount" ); 
+    // Otherwise it should return false.
+    return false;
+  }
+}
 // Then write some function calls you would use to test your function.
+getDiscount(14);
+getDiscount(65);
+getDiscount(10);
+getDiscount(78);
+getDiscount(42);
 
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
