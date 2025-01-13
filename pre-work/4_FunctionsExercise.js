@@ -89,10 +89,14 @@ console.log("The value of z is " + z);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction1 does
+// it returns p1 * 2. p1 is the value that is passed in through a function, in which in this case would be y which is 4, so it would return 4 * 2 which equals to 8
 // 2. What prints out for the value of y
+// 4
 // 3. What prints out for the value of z
+// 8
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+// I was correct
 
 // Exercise 8. Read the following code (don't run it yet)
 function mysteryFunction2(p1, p2) {
