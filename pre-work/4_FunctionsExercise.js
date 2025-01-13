@@ -127,16 +127,22 @@ console.log("The value of b is " + b);
 // Here's a string I made representing my grocery list.
 // Using split() and groceryList, make an array of my grocery list items
 const groceryList = "eggs,carrots,orange juice";
+let splitGroceryList = groceryList.split(",");
+//print out split to check
+console.log(splitGroceryList);
 
 // Here's a string I made representing my morning schedule.
 // Using split() and mySchedule, make an array of the *first 2* things I do in the morning
 // There are multiple ways to do this, but try doing it using only the split() function.
 const mySchedule = "wake up--->brush teeth--->eat breakfast--->go to work";
+let splitMySchedule = mySchedule.split("--->", 2);
+//print out splitMySchedule for testing
+console.log(splitMySchedule);
 
 // Congrats, you made it to the end!
-// Did you find this easy or hard? If you used references, which ones helped you?
+// Did you find this easy or hard? If you used references, which ones helped you? 
 // Please answer in a comment below.
-//
+// This was pretty easy. Only reference I used was the documentation on the .split() that was provided. 
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
