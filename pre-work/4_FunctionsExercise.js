@@ -10,7 +10,11 @@
 // But make sure you understand why the correct answer is right.
 
 // Exercise 1. Define a function called logGreeting() that prints the string “Hello!” (use console.log).
+function logGreeting(){
+  console.log( "Hello" );
+}
 // Underneath the function, write the line of code that runs the function.
+logGreeting();
 
 // Exercise 2. Define a function called getName() that *returns* a string that is your name.
 // Remember, this function should return the string -- not print it.
