@@ -68,8 +68,15 @@ getDiscount(78);
 getDiscount(42);
 
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
-// The function should print the string the given number of times.
+function printRepeatedString(num, string){
+  // The function should print the string the given number of times.
+  for( let i =0; i <= num; i++ ){
+    console.log(string);
+  }
+}
 // Then write some function calls you would use to test your function.
+printRepeatedString(3, "Hi there!");
+printRepeatedString(5, "Print this");
 
 // Exercise 7. Read the following code (don't run it yet)
 function mysteryFunction1(p1) {
