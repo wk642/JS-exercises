@@ -44,6 +44,7 @@ function frankenSplice( firstArry, secondArry, insertElementSpotIndex ){
     // add first array into the second array store it in the result array
     result.splice(insertElementSpotIndex, 0, firstArry);
     console.log( "final results: " + result + "\n ------");
+    return result;
 }
 //test function
 frankenSplice([1, 2, 3], [4, 5], 1) //return [4, 1, 2, 3, 5].
