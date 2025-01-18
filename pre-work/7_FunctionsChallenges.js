@@ -17,7 +17,7 @@ function prependToString( str1, str2 ){
     // prependToString('world', 'hello ') // --> 'hello world'
     // prependToString('nothing', '') // --> 'nothing'
     // test
-    console.log( str2+ " " + str1 );
+    console.debug( str2+ " " + str1 );
     // return it
     return ( str2+ " " + str1 );
 }
@@ -35,13 +35,13 @@ function stringIncludes( word, character ){
         // if there the letter of the word matches the character
         if ( word[i] === character ){
             // test to make sure it works 
-            console.log( "it matches" );
+            console.debug( "it matches" );
             // return true
             return true;
         } 
     }
     // otherwise return false
-    console.log( "does not match" );
+    console.debug( "does not match" );
     return false;
 }
 stringIncludes('awesome', 'e'); // --> true
@@ -57,13 +57,13 @@ function stringLastIndexOf( word, singleCharacter ){
         // check to see if the letter in the word matches the single character
         if (word[i] === singleCharacter ){
             // check to make sure 
-            console.log( "Match at index " + i );
+            console.debug( "Match at index " + i );
             return i;
         }
     }
     // otherwise return -1
     // check to make sure
-    console.log( "No Match! -1" );
+    console.debug( "No Match! -1" );
     return -1;
 }
 
@@ -76,15 +76,15 @@ function removeFromString( string, stringIndex, numOfCharactersToRemove ){
     // get the string at the stringIndex
     let startOfString = string.slice( 0, stringIndex );
     // check to make sure we have the right amount of letters as the start
-    console.log( "start of string = " + startOfString );
+    console.debug( "start of string = " + startOfString );
     //get the second part, remove the number of characters passed in by adding it to the startIndex, so we remove the correct number from the correct index
     let endOfString = string.slice( stringIndex + numOfCharactersToRemove );
     // check to make sure 
-    console.log( "end of string = " + endOfString );
+    console.debug( "end of string = " + endOfString );
     // combine both so we can print out the full thing
     let results = startOfString + endOfString;
     // check before we return it
-    console.log( "final answer is " + results); // works
+    console.debug( "final answer is " + results); // works
     // return results
     return results;
 }
@@ -103,13 +103,13 @@ function indexOf( arr, num ){
     for ( let i = 0; i < arr.length; i++ ){
         if ( arr[i] === num ){
             // check to make sure we are in this if statement
-            console.log( arr[i] + " is a match!");
+            console.debug( arr[i] + " is a match!");
             return i;
         }
     }
     // otherwise return -1
     // check to make sure that there is no match
-    console.log( "No match -1" );
+    console.debug( "No match -1" );
     return -1;
 }
 
@@ -121,26 +121,26 @@ let arr3 = [1, 2];
 indexOf(arr3, 10); // --> -1
 
 // Exercise 6. Write a function called includes which accepts a collection, a value, and an optional starting index. The function should return true if the value exists in the collection when we search starting from the starting index. Otherwise, it should return false.
-function includes( collection, value, optionalStartingIndex ){
+function includes( collection, value, optionalStartingIndex=0 ){
     // The collection can be a string, an array, or an object. 
     // If the collection is a string or array, the third parameter is a starting index for where to search from. 
     // string or array: 
     if ( typeof collection === "string" || Array.isArray(collection) ){
         // check to make sure we are in string or array
-        console.log( "string / array " );
+        console.debug( " string / array " );
         // start at 3rd parameter (optionalStartingIndex)
+        // ??0 means if null automatically 0 [null coalescing operator]
         for ( i = optionalStartingIndex; i < collection.length; i++ ){
-            console.log("In string /array for loop");
-            console.log(collection[i]);
+            console.debug(`  In string /array for loop  ${collection[i]}`);
+            //check
             if (collection[i] === value){
-                //check
-                console.log( "string / array a match, true" );
-                // retrun true
+                console.debug( "   string / array a match, true" );
+                // return true
                 return true;
             }
         } 
         // otherwise check, return false
-        console.log( "string /array not a match, false" );
+        console.debug( " string /array not a match, false" );
         return false;
     } // object: 
     else if ( typeof collection === "object"){
@@ -149,22 +149,24 @@ function includes( collection, value, optionalStartingIndex ){
             // if matches, 
             if (collection[x] === value){
                 // check
-                console.log( "Object Matches, true" ) ;
+                console.debug( "   Object Matches, true" ) ;
                 return true;
             }
         } // otherwise check and return false
-        console.log( "Object does not match, false" ) ;
+        console.debug( " Object does not match, false" ) ;
         return false;
     }
 
 }
 
 // need to come back to this exercise to debug what's wrong, when it is in string / array
-includes([1, 2, 3], 1) // --> true
-includes([1, 2, 3], 1, 2) // --> false
-includes([1, 2, 3], 6) // --> false
-includes({ 'a': 1, 'b': 2 }, 1) // --> true
-includes({ 'a': 1, 'b': 2 }, 'a') // --> false
-includes('abcd', 'b') // --> true
-includes('abcd', 'e') // --> false
-includes('abcd', 'a', 2) // --> false
+//turn off console.debug output
+console.debug=function(){};
+console.assert(true==includes([1, 2, 3], 1),"01 array does contain"); 
+console.assert(false==includes([1, 2, 3], 1, 2),"02 array with start index"); 
+console.log(`03: expected false:  ${includes([1, 2, 3], 6)}`); //array does not contain 
+console.log(`4: expected true:  ${includes({ 'a': 1, 'b': 2 }, 1)}`); 
+console.log(`5: expected false:  ${includes({ 'a': 1, 'b': 2 }, 'a')}`);
+console.log(`6: expected true:  ${includes('abcd', 'b')}`); 
+console.log(`7: expected false:  ${includes('abcd', 'e')}`); 
+console.log(`8: expected false:  ${includes('abcd', 'a', 2)}`); 
